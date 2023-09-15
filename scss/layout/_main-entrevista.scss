@@ -1,0 +1,13 @@
+.titulo-entrevista{
+    font-size: 2em;
+    margin: auto;
+    padding: .8em;
+}
+.video-entrevista{
+    @include flex(column,none,none,center);
+    width: 50rem;
+    height: 31.25rem;   
+    margin: auto;
+    padding: .9em; 
+    flex-grow: 1; 
+}

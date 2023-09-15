@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InioAsano-inicio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div>
+                <img class="logo" src="./assets/img/logo.png" alt="">
+            </div>
+            <ul class="links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="./pages/biografia.html">Biografia</a></li>
+                <li><a href="./pages/obras.html">Obras</a></li>
+                <li><a href="./pages/entrevista.html">Entrevista</a></li>
+            </ul>
+            <a href="./pages/contacto.html" class="action-btn">Contactanos</a>
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown-menu">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="./pages/biografia.html">Biografia</a></li>
+            <li><a href="./pages/obras.html">Obras</a></li>
+            <li><a href="./pages/entrevista.html">Entrevista</a></li>
+            <li><a href="./pages/contacto.html" class="action-btn">Contactanos</a></li>
+        </div>
+    </header>
+    <script>
+        const togglebtn = document.querySelector('.toggle-btn')
+        const togglebtnicon = document.querySelector('.toggle-btn i')
+        const dropdownmenu = document.querySelector('.dropdown-menu')
+
+        togglebtn.onclick = function(){
+            dropdownmenu.classList.toggle('open')
+            const isOpen = dropdownmenu.classList.contains('open')
+            togglebtnicon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+    <main class="main-index">
+        <section class="banner">
+            <div>
+                <h1 class="texto1">INIO ASANO </h1>
+                <P class="texto2">MANGAKA</P>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <div>
+            <img src="./assets/img/facebook.png" alt="">
+            <p>Inio Asano Oficial</p>
+        </div>
+        <div>
+            <img src="./assets/img/whatsapp.png" alt="">
+            <p>+56900000000</p>
+        </div> 
+        <div>
+            <img src="./assets/img/instagram.png" alt="">
+            <p>Inio Asano Oficial</p>
+        </div>      
+    </footer>
+</body>
+</html>

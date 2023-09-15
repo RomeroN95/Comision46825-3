@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="inio asano, biografia, mangaka japones, japon, mangas">
+    <meta name="description" content="biografia del mangaka japones inio asano">
+    <meta name="author" content="Luis Romero">
+    <meta name="copyrigth" content="Inio Asano">
+    <title>InioAsano-Biografia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div>
+                <img class="logo" src="../assets/img/logo.png" alt="">
+            </div>
+            <ul class="links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#">Biografia</a></li>
+                <li><a href="../pages/obras.html">Obras</a></li>
+                <li><a href="../pages/entrevista.html">Entrevista</a></li>
+            </ul>
+            <a href="../pages/contacto.html" class="action-btn">Contactanos</a>
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown-menu">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="#">Biografia</a></li>
+            <li><a href="../pages/obras.html">Obras</a></li>
+            <li><a href="../pages/entrevista.html">Entrevista</a></li>
+            <li><a href="../pages/contacto.html" class="action-btn">Contactanos</a></li>
+        </div>
+    </header>
+    <script>
+        const togglebtn = document.querySelector('.toggle-btn')
+        const togglebtnicon = document.querySelector('.toggle-btn i')
+        const dropdownmenu = document.querySelector('.dropdown-menu')
+
+        togglebtn.onclick = function(){
+            dropdownmenu.classList.toggle('open')
+            const isOpen = dropdownmenu.classList.contains('open')
+            togglebtnicon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+    <main class="main-biografia">
+        <section class="titulo-biografia">
+            <h1>BIOGRAFIA INIO ASANO</h1>
+        </section>
+        <section class="section-biografia">
+            <article class="articulo-biografia">
+                <img class="imagen-inio" src="../assets/img/asano3.jpg" alt="">
+                <div class="texto-biografia"> 
+                    <p>Inio Asano (Ibaraki, Japón, 1980) se ha convertido en los últimos años en uno de los artistas más reconocidos del manga, tanto por su peculiar sensibilidad como por la originalidad de su trabajo.</p>
+                    <p>Según ha comentado en entrevistas, empezó a dibujar fanfic de los cómics más populares del momento en el instituto. Animado por sus compañeros, envió muestras de su trabajo a la revista Big Comic Spirits, toda una institución en Japón, en la cual fue admitido con sólo diecisiete años. Allí, tuvo que pasar unos años de aprendizaje, trabajando como asistente del mangaka Shin Takahashi. Hacia el 2000, empezó a publicar historias cortas, que serían recopiladas en dos tomos bajo el título de What a wonderful world, en las que refleja la desorientación de los jóvenes japoneses de su generación, víctimas de la crisis económica, obligados a seguir viviendo con sus padres y a ocupar empleos precarios.</p>
+                    <p>Su reputación creció gracias a Nijigahara Holograph (2005), que sería la primera obra de Asano publicada en España (por Ponent Mon en 2009 y luego por Milky Way en 2014). Se trata de una obra ya totalmente personal: muy compleja, extremadamente crítica con la sociedad japonesa, llena de elementos simbólicos, en la que nos presenta a varios personajes que arrastran graves traumas heredados de su infancia y juventud. A este manga tan oscuro, le siguió la que se ha convertido, sin duda, en su obra más popular, Solanin (2006), en la que muestra a varios jóvenes que tras el paso por la universidad tratan de abrirse paso en el mundo laboral sin perder sus sueños e ilusiones. Se convirtió en un enorme éxito, tanto dentro como fuera de Japón, hasta el punto de ser adaptada al cine en 2010 y que el grupo Asian Kung Fu Generation le dedicó una canción (cuya letra escribió el propio Asano). Además, siguió publicando historias cortas recopiladas en tomos como El barrio de la luz y El fin del mundo y antes del amanecer.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <img src="../assets/img/facebook.png" alt="">
+            <p>Inio Asano Oficial</p>
+        </div>
+        <div>
+            <img src="../assets/img/whatsapp.png" alt="">
+            <p>+56900000000</p>
+        </div> 
+        <div>
+            <img src="../assets/img/instagram.png" alt="">
+            <p>Inio Asano Oficial</p>
+        </div>      
+    </footer>
+</body>
+</html>

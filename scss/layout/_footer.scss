@@ -1,0 +1,13 @@
+footer{
+    background-color: $color-header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+    div{
+        p{
+            color: $color-background;
+            display: flex;
+        }
+    }
+}

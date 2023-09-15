@@ -1,0 +1,25 @@
+.main-biografia{
+    .titulo-biografia{
+        h1{
+            @extend .titulo-entrevista;
+            text-align: center;
+        }
+    }
+    .section-biografia{
+        @include flex(none,none,space-between,none);
+        margin: auto;
+        .articulo-biografia{
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            .texto-biografia{
+                p{
+                    margin: auto;
+                    padding: .9em;
+                    align-items: center;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}

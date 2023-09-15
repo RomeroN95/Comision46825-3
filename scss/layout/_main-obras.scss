@@ -1,0 +1,18 @@
+.layout {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5rem;
+    margin-top: 1.25rem;
+    width: 40%;
+}
+.obra{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    padding: 3em 2em;
+}
+.obra p{
+    margin-top: 20px;
+}
